@@ -8,24 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playwrite+US+Trad+Guides&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Fotos/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <body>
-<a href="https://www.gotokyo.org" class="link_estatico" target="_blank">
-    Info Turismo Tokio
+
 </a>
-<header>
-    <h1>Descubre Tokio</h1>
+<header class="header">
+    <br>
+    <br>
+    <h1>DESCUBRE TOKYO</h1>
+    <br>
+    <br>
+    <hr>
 </header>
+<a href="https://www.gotokyo.org" class="link_estatico" target="_blank">
+    <img src="Fotos/logo.png" alt="logo">
 
 <main class="disposicion">
 
     <!-- COLUMNA 1: MENÚ -->
     <nav class="menu">
         <ul>
-            <li><a href="">Galería</a></li>
-            <li><a href="">Lugares</a></li>
-            <li><a href="">Mapa</a></li>
-            <li><a href="">Extra</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#lugares">Lugares</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#bootstrap">Extra</a></li>
         </ul>
     </nav>
     <!-- COLUMNA 2: CONTENIDO PRINCIPAL -->
@@ -35,98 +44,128 @@
         <section id="galeria">
             <h2>Galería de Tokio</h2>
             <div class="galeria-tabla">
-                <img src="/Agencia_de_Viajes/Fotos/tokiodenoche.png" alt="Tokio noche">
-                <img src="/Agencia_de_Viajes/Fotos/shibuya.png" alt="Shibuya">
-                <img src="/Agencia_de_Viajes/Fotos/Templo-Tokio.png" alt="Templo en Tokio">
-                <img src="/Agencia_de_Viajes/Fotos/akihabara.png" alt="Akihabara">
-                <img src="/Agencia_de_Viajes/Fotos/torre-tokio.png" alt="Tokyo Tower">
-                <img src="/Agencia_de_Viajes/Fotos/callestokio.png" alt="Calles de Tokio">
+                <img src="Fotos/tikiodenoche.png" alt="Tokio noche">
+                <img src="Fotos/shibuya.png" alt="Shibuya">
+                <img src="Fotos/templotokio.png" alt="Templo en Tokio">
+                <img src="Fotos/akihabarajpg.png" alt="Akihabara">
+                <img src="Fotos/tokiotower.png" alt="Tokyo Tower">
+                <img src="Fotos/callestokio.png" alt="Calles de Tokio">
             </div>
         </section>
+        <br>
+        <hr>
+        <br>
         <!-- LUGARES DE INTERÉS -->
         <section id="lugares">
             <h2>Lugares de interés</h2>
             <div class="lugares-tabla">
 
                 <article class="lugar">
-                    <img src="" alt="Shibuya">
+                    <img src="Fotos/shibuya.png" alt="Shibuya">
                     <h3>Shibuya Crossing</h3>
                     <p>El cruce peatonal más famoso del mundo.</p>
                     <p>Shibuya</p>
                 </article>
 
                 <article class="lugar">
-                    <img src="" alt="Senso-ji">
+                    <img src="Fotos/sensoji_templo.jpg" alt="Senso-ji">
                     <h3>Templo Senso-ji</h3>
                     <p>Templo budista más antiguo de Tokio.</p>
                     <p>Asakusa</p>
                 </article>
 
                 <article class="lugar">
-                    <img src="" alt="Akihabara">
+                    <img src="Fotos/akihabara2.png" alt="Akihabara">
                     <h3>Akihabara</h3>
                     <p>Barrio tecnológico y de cultura otaku.</p>
                     <p>Chiyoda</p>
                 </article>
 
                 <article class="lugar">
-                    <img src="" alt="Tokyo Tower">
+                    <img src="Fotos/Tokyo-Tower2.jpg" alt="Tokyo Tower">
                     <h3>Tokyo Tower</h3>
                     <p>Icono de la ciudad con vistas panorámicas.</p>
                     <p>Minato</p>
                 </article>
             </div>
         </section>
+        <br>
+        <hr>
+        <br>
         <!-- MAPA -->
         <section id="mapa">
             <h2>Mapa de Tokio</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d831726.174542271!2d139.29698430753976!3d35.64454897699214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2zVG9raW8sIEphcMOzbg!5e0!3m2!1ses!2ses!4v1770111706358!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        <br>
+        <hr>
+        <br>
         <!-- BLOQUE EXTRA CON BOOTSTRAP -->
-        <section id="extra">
-            <h2>Eventos destacados</h2>
-            <div class="card p-3">
-                <h5 class="card-title">Festival de los Cerezos</h5>
-                <p class="card-text">
-                    Disfruta del Hanami durante la floración de los sakura en primavera.
-                </p>
-                <a href="#" class="btn btn-primary">Ver más</a>
+         <section id="bootstrap">
+         <h2>Otros lugares de interés</h2>
+            <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Fotos/monte_fuji.jpg" class="d-block w-100" alt="monte_fuji">
             </div>
-        </section>
-
-    </section>
+            <div class="carousel-item">
+                <img src="Fotos/disney.png" class="d-block w-100" alt="disney">
+            </div>
+            <div class="carousel-item">
+                <img src="Fotos/parque_natural.jpg" class="d-block w-100" alt="natual">
+            </div>
+            <div class="carousel-item">
+                <img src="Fotos/tokyomirador.jpg" class="d-block w-100" alt="mirador">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+            </section>
+            </section> 
         <!-- COLUMNA 3: NOTICIAS -->
     <aside class="noticias">
         <h2>Últimas noticias</h2>
 
         <article class="noticia">
-            <img src="" alt="">
+            <img src="Fotos/transporte-japon.png" alt="transporte">
             <h4>Nueva línea de metro</h4>
-            <p>Mejoras en el transporte urbano hedhhtsdthdhtfhftfjhjfjhtdytydjg</p>
+            <p>Mejoras en el transporte urbano</p>
+            <p><a href = https://mundodeltransporte.com/el-metro-de-tokio-puntualidad-limpieza-y-respeto-como-pilares-del-transporte-urbano-mas-antiguo-de-asia>Leer más</a></p>
         </article>
 
         <article class="noticia">
-            <img src="" alt="">
+            <img src="Fotos/feria-robots.png" alt="feria">
             <h4>Evento tecnológico</h4>
             <p>Feria de innovación japonesa</p>
+            <p><a href = https://www.nferias.com/tecnologia/japon>Leer más</a></p>
         </article>
 
         <article class="noticia">
-            <img src="" alt="">
+            <img src="Fotos/gastronomia.jpg" alt="gastronomia">
             <h4>Gastronomía japonesa</h4>
             <p>Nuevos restaurantes Michelin</p>
+            <p><a href = https://viajandoporjapon.com/sobre-japon/comida-de-japon>Leer más</a></p>
         </article>
 
         <article class="noticia">
-            <img src="" alt="">
+            <img src="Fotos/Tokyosostenible.png" alt="sostenible">
             <h4>Turismo sostenible</h4>
             <p>Iniciativas ecológicas en Tokio</p>
+            <p><a href = https://voyapon.com/es/turismo-sostenible-saitama-chiba-tokio-kanagawa>Leer más</a></p>
         </article>
 
         <article class="noticia">
-            <img src="" alt="">
+            <img src="Fotos/festivaltokyo.png" alt="festival">
             <h4>Cultura tradicional</h4>
             <p>Festivales y tradiciones locales</p>
+            <p><a href = https://www.japan.travel/es/see-and-do/festivals-and-events>Leer más</a></p>
         </article>
     </aside>
 
@@ -136,8 +175,5 @@
     <p>© Turismo Tokio</p>
 </footer>
 
-</body>
-</html>
-    
 </body>
 </html>

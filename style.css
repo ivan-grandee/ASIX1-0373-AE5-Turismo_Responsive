@@ -5,22 +5,33 @@
     padding: 0;
 }
 
-body {
+.header{
+    background-color: #ff0000;
+    color: white;
+}
+
+.body {
     font-family: Arial, sans-serif;
-    background-color: rgb(211, 210, 210)  ;
+    background-color: rgb(255, 255, 255)  ;
 }
 
 /* Enlace flotante */
 .link_estatico {
     position: fixed;
-    top: 10px;
-    right: 10px;
-    background: #ff9800;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
+    top: 30px;
+    right: 20px;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    place-items: center;
     z-index: 1000;
 }
+
+.link_estatico img {
+    width: 65px; 
+    height: 65px;
+    display: block; 
+}
+
 
 /* Layout principal */
 .disposicion {
@@ -32,27 +43,53 @@ body {
 
 /* Menú */
 
+.menu {
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    align-self: start;
+    position: sticky;
+    top: 30px;
+}
+
 .menu ul {
     list-style: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    
 }
 
 .menu li {
     margin-bottom: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 /* Contenido */
 
 .contenido{
-    background-color: #f4f4f4;
+    background-color: #cecece;
 }
 /* Galería */
+
+
 .galeria-tabla {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
-.galeria-tabla img {
-    width: 100%;
+.galeria-tabla img { 
+    width: 100%;        /* Ocupa todo el ancho de su columna */
+    height: 200px;      /* FUERZA una altura fija igual para todas */
+    object-fit: cover;  /* Recorta la imagen para llenar el hueco sin deformar */
+    border-radius: 5px; 
+    display: block;     /* Elimina huecos extraños debajo de la imagen */
 }
 
 /* Lugares */
@@ -63,7 +100,11 @@ body {
 }
 
 .lugar img {
-    width: 100%;
+    width: 100%;        /* Ocupa todo el ancho de su columna */
+    height: 200px;      /* FUERZA una altura fija igual para todas */
+    object-fit: cover;  /* Recorta la imagen para llenar el hueco sin deformar */
+    border-radius: 5px; 
+    display: block;     /* Elimina huecos extraños debajo de la imagen */
 }
 
 /* Noticias */
@@ -74,14 +115,17 @@ body {
 }
 .noticia {
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px;
-    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 .noticia img {
     width: 100%;
+    height: 200px;      /* FUERZA una altura fija igual para todas */
+    object-fit: cover;  /* Recorta la imagen para llenar el hueco sin deformar */
+    border-radius: 5px; 
+    display: block;     /* Elimina huecos extraños debajo de la imagen */
 }
 
 /* Mapa */
@@ -89,6 +133,15 @@ body {
     width: 100%;
     margin-top: 10px;
 }
+
+.carousel-item{
+    width: 100%;
+    height: 450px;      /* FUERZA una altura fija igual para todas */
+    object-fit: cover;  /* Recorta la imagen para llenar el hueco sin deformar */
+    border-radius: 5px; 
+    display: block;     /* Elimina huecos extraños debajo de la imagen */
+}
+
 
 /* TABLET */
 @media (max-width: 1024px) {
